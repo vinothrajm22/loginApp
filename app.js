@@ -11,8 +11,7 @@ app.run(['$rootScope', '$location', '$state', 'loginService', function ($rootSco
     }
 }])
 
-.config(function($stateProvider, $urlRouterProvider) {
-    console.log('comes here');
+.config(function($stateProvider, $urlRouterProvider) {    
     $urlRouterProvider.otherwise('/');
     $stateProvider
         .state('login',{            
