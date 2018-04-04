@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="learning">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="fragment" content="!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="./app.js"></script>
+    <script src="./controllers/loginController.js"></script>
+    <script src="./services/loginService.js"></script>
+</head>
+
+<body>
+    
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">                    
+                    <a ui-sref="login" class="navbar-brand" ui-sref-active="active">Welcome to my page</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a ui-sref="login" ui-sref-active="active">Login</a></li>
+                    <li><a ui-sref="dashboard" ui-sref-active="active">Dashboard</a></li>
+                </ul>
+            </div>
+        </nav>  
+    <div class="container">      
+        <ui-view></ui-view>
+    </div>
+</body>
+
+</html>

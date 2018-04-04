@@ -1,0 +1,34 @@
+<div class="container" ng-controller="loginController">
+    <div class="row">
+		<div class="span12">
+			<form class="form-horizontal" name="loginForm" ng-submit="validateUser(loginForm.$valid)" novalidate>
+			  <fieldset>
+			    <div id="legend">
+			      <legend class="">Login to the dashboard</legend>
+			    </div>
+			    <div class="control-group">
+			      <!-- Username -->
+			      <label class="control-label"  for="username">Username</label>
+			      <div class="controls">
+			        <input type="text" id="username" ng-model="username" name="username" placeholder="" class="input-xlarge" required>
+			      </div>
+			    </div>
+			    <div class="control-group">
+			      <!-- Password-->
+			      <label class="control-label" for="password">Password</label>
+			      <div class="controls">
+			        <input type="password" id="password" ng-model="password" name="password" placeholder="" class="input-xlarge">
+			      </div>
+			    </div>
+			    <div class="control-group">
+			      <!-- Button -->
+			      <div class="controls">
+			        <button class="btn btn-success">Login</button>
+			      </div>
+			    </div>
+			  </fieldset>
+				<h1>{{loginForm.$valid}}</h1>
+			</form>
+		</div>
+	</div>
+</div>
